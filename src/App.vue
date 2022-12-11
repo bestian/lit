@@ -3,7 +3,8 @@
     <div class="wave">
       <div class="links">
         <router-link to="/">詩文選</router-link> |
-        <router-link to="/golearn">勸學篇</router-link>
+        <router-link to="/golearn">勸學篇</router-link> |
+        <router-link to="/edit">自訂</router-link>
       </div>
     </div>
   </nav>
@@ -12,6 +13,7 @@
     如果您沒有看到注音，請至這裡安裝注音字型：
     <a href="https://github.com/ButTaiwan/bpmfvs/releases/download/v1.320/BpmfGenYoGothic.zip" target="_blank" rel="noopener noreferrer">
       注音字型
+    </a>
   </footer>
 </template>
 
@@ -41,14 +43,14 @@ body {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: left;
+  text-align: right;
   color: #2c3e50;
 }
 
 .hello {
   display: flex;
   padding-top: .6em;
-  padding-bottom: 1.2em;
+  margin-bottom: 3.2em;
   align-items: right;
 }
 
@@ -77,6 +79,7 @@ p, .zh {
 
 p {
   font-size: 24px;
+  white-space: pre-line;
 }
 
 nav {
@@ -143,5 +146,12 @@ nav {
   background-size: 40px 20px;
   background-image:
     radial-gradient(circle at 10px 15px, #cfc 12px, transparent 13px);
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: .6em;
 }
 </style>
