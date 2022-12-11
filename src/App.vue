@@ -8,6 +8,11 @@
     </div>
   </nav>
   <router-view/>
+  <footer>
+    如果您沒有看到注音，請至這裡安裝注音字型：
+    <a href="https://github.com/ButTaiwan/bpmfvs/releases/download/v1.320/BpmfGenYoGothic.zip" target="_blank" rel="noopener noreferrer">
+      注音字型
+  </footer>
 </template>
 
 <script type="text/javascript">
